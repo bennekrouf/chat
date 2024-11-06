@@ -38,45 +38,45 @@ export default function SidebarDocs() {
       >
         <Img src={logoWhite.src} w="40px" h="40px" />
       </Flex>
-      <Flex
-        direction="column"
-        mb="12px"
-        align="center"
-        justify="center"
-        px="15px"
-        pt="55px"
-      >
-        <Text
-          fontSize={{ base: 'lg', xl: '18px' }}
-          color="white"
-          fontWeight="bold"
-          lineHeight="150%"
-          textAlign="center"
-          mb="14px"
-        >
-          Go unlimited with PRO
-        </Text>
-        <Text fontSize="14px" color={'white'} mb="14px" textAlign="center">
-          Get your AI Project to another level and start doing more with Horizon
-          AI Template PRO!
-        </Text>
-      </Flex>
-      <Link href="https://horizon-ui.com/ai-template" isExternal>
-        <Button
-          bg="whiteAlpha.300"
-          _hover={{ bg: 'whiteAlpha.200' }}
-          _active={{ bg: 'whiteAlpha.100' }}
-          mb={{ sm: '16px', xl: '24px' }}
-          color={'white'}
-          fontWeight="regular"
-          fontSize="sm"
-          minW="185px"
-          mx="auto"
-          borderRadius="45px"
-        >
-          Get started with PRO
-        </Button>
-      </Link>
+      {/* <Flex */}
+      {/*   direction="column" */}
+      {/*   mb="12px" */}
+      {/*   align="center" */}
+      {/*   justify="center" */}
+      {/*   px="15px" */}
+      {/*   pt="55px" */}
+      {/* > */}
+      {/*   <Text */}
+      {/*     fontSize={{ base: 'lg', xl: '18px' }} */}
+      {/*     color="white" */}
+      {/*     fontWeight="bold" */}
+      {/*     lineHeight="150%" */}
+      {/*     textAlign="center" */}
+      {/*     mb="14px" */}
+      {/*   > */}
+      {/*     Go unlimited with PRO */}
+      {/*   </Text> */}
+      {/*   <Text fontSize="14px" color={'white'} mb="14px" textAlign="center"> */}
+      {/*     Get your AI Project to another level and start doing more with Horizon */}
+      {/*     AI Template PRO! */}
+      {/*   </Text> */}
+      {/* </Flex> */}
+      {/* <Link href="https://horizon-ui.com/ai-template" isExternal> */}
+      {/*   <Button */}
+      {/*     bg="whiteAlpha.300" */}
+      {/*     _hover={{ bg: 'whiteAlpha.200' }} */}
+      {/*     _active={{ bg: 'whiteAlpha.100' }} */}
+      {/*     mb={{ sm: '16px', xl: '24px' }} */}
+      {/*     color={'white'} */}
+      {/*     fontWeight="regular" */}
+      {/*     fontSize="sm" */}
+      {/*     minW="185px" */}
+      {/*     mx="auto" */}
+      {/*     borderRadius="45px" */}
+      {/*   > */}
+      {/*     Get started with PRO */}
+      {/*   </Button> */}
+      {/* </Link> */}
     </Flex>
   );
 }

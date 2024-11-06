@@ -102,18 +102,18 @@ export default function HeaderLinks(props: {
               w="100%"
               href="https://horizon-ui.com/ai-template/"
             >
-              <Button
-                variant="primary"
-                py="20px"
-                px="16px"
-                fontSize="sm"
-                borderRadius="45px"
-                mb="10px"
-                w="100%"
-                h="54px"
-              >
-                Buy Horizon AI Template
-              </Button>
+              {/* <Button */}
+              {/*   variant="primary" */}
+              {/*   py="20px" */}
+              {/*   px="16px" */}
+              {/*   fontSize="sm" */}
+              {/*   borderRadius="45px" */}
+              {/*   mb="10px" */}
+              {/*   w="100%" */}
+              {/*   h="54px" */}
+              {/* > */}
+              {/*   Buy Horizon AI Template */}
+              {/* </Button> */}
             </Link>
             <Link
               isExternal

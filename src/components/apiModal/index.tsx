@@ -52,33 +52,33 @@ function APIModal(props: { setApiKey: any; sidebar?: boolean }) {
   };
   return (
     <>
-      {sidebar ? (
-        <Button
-          onClick={onOpen}
-          display="flex"
-          variant="api"
-          fontSize={'sm'}
-          fontWeight="600"
-          borderRadius={'45px'}
-          mt="8px"
-          minH="40px"
-        >
-          Set API Key
-        </Button>
-      ) : (
-        <Button
-          onClick={onOpen}
-          minW="max-content !important"
-          p="0px"
-          me="10px"
-          _hover={{ bg: 'none' }}
-          _focus={{ bg: 'none' }}
-          _selected={{ bg: 'none' }}
-          bg="none !important"
-        >
-          <Icon w="18px" h="18px" as={MdLock} color={navbarIcon} />
-        </Button>
-      )}
+      {/* {sidebar ? ( */}
+      {/*   <Button */}
+      {/*     onClick={onOpen} */}
+      {/*     display="flex" */}
+      {/*     variant="api" */}
+      {/*     fontSize={'sm'} */}
+      {/*     fontWeight="600" */}
+      {/*     borderRadius={'45px'} */}
+      {/*     mt="8px" */}
+      {/*     minH="40px" */}
+      {/*   > */}
+      {/*     Set API Key */}
+      {/*   </Button> */}
+      {/* ) : ( */}
+      {/*   <Button */}
+      {/*     onClick={onOpen} */}
+      {/*     minW="max-content !important" */}
+      {/*     p="0px" */}
+      {/*     me="10px" */}
+      {/*     _hover={{ bg: 'none' }} */}
+      {/*     _focus={{ bg: 'none' }} */}
+      {/*     _selected={{ bg: 'none' }} */}
+      {/*     bg="none !important" */}
+      {/*   > */}
+      {/*     <Icon w="18px" h="18px" as={MdLock} color={navbarIcon} /> */}
+      {/*   </Button> */}
+      {/* )} */}
 
       <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
@@ -102,9 +102,7 @@ function APIModal(props: { setApiKey: any; sidebar?: boolean }) {
                 lineHeight="28px"
                 mb="22px"
               >
-                You need an OpenAI API Key to use Horizon AI Template's
-                features. Your API Key is stored locally on your browser and
-                never sent anywhere else.
+                You need to remove all gpt related stuff.
               </Text>
               <Flex mb="20px">
                 <Input
