@@ -1,0 +1,27 @@
+// proto/matcher.proto
+
+syntax = "proto3";
+
+package matcher;
+
+service Matcher {
+    rpc MatchQuery (MatchRequest) returns (MatchResponse) {}
+}
+
+message MatchRequest {
+    string query = 1;
+    string language = 2;
+    bool debug = 3;
+    bool show_all_matches = 4;
+}
+
+message MatchResponse {
+    repeated Match matches = 1;
+    string error = 2;
+}
+
+message Match {
+    string text = 1;
+    float score = 2;
+    // Add other fields as needed
+}
