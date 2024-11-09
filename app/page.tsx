@@ -4,12 +4,12 @@
 import Link from '@/components/link/Link';
 import MessageBoxChat from '@/components/MessageBox';
 import {
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
-  Box,
+  // Accordion,
+  // AccordionButton,
+  // AccordionIcon,
+  // AccordionItem,
+  // AccordionPanel,
+  // Box,
   Button,
   Flex,
   Icon,
@@ -87,7 +87,7 @@ export default function Chat() {
       // Format the response nicely
       setOutputMessage(JSON.stringify(data, null, 2));
 
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error:', error);
       setOutputMessage(`Error: ${error.message}`);
     } finally {

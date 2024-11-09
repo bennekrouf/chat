@@ -1,8 +1,8 @@
 'use client';
 import React, { ReactNode } from 'react';
-import type { AppProps } from 'next/app';
+// import type { AppProps } from 'next/app';
 import { ChakraProvider, Box, Portal, useDisclosure } from '@chakra-ui/react';
-import theme from '@/theme/theme';
+// import theme from '@/theme/theme';
 import routes from '@/routes';
 import Sidebar from '@/components/sidebar/Sidebar';
 import Footer from '@/components/footer/FooterAdmin';
@@ -32,7 +32,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body id={'root'}>
         <AppWrappers>
-          {/* <ChakraProvider theme={theme}> */}
           {pathname?.includes('register') || pathname?.includes('sign-in') ? (
             children
           ) : (
@@ -72,7 +71,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   pt="50px"
                 >
                   {children}
-                  {/* <Component apiKeyApp={apiKey} {...pageProps} /> */}
                 </Box>
                 <Box>
                   <Footer />
@@ -80,7 +78,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </Box>
             </Box>
           )}
-          {/* </ChakraProvider> */}
         </AppWrappers>
       </body>
     </html>
