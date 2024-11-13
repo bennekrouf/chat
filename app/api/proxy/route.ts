@@ -30,7 +30,7 @@ export async function POST(request: Request): Promise<Response> {
 
     // Create client
     const client = new proto.matcher.Matcher(
-      'chat.mayorana.ch:50030',
+      'matcher.mayorana.ch:8081',
       grpc.credentials.createInsecure()
     );
 
