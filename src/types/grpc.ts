@@ -1,5 +1,3 @@
-// types/grpc.ts
-
 export interface MatchRequest {
   query: string;
   language?: string;
@@ -10,7 +8,6 @@ export interface MatchRequest {
 export interface Match {
   text: string;
   score: number;
-  // Add other fields as needed
 }
 
 export interface MatchResponse {

@@ -1,7 +1,4 @@
-// proto/matcher.proto
-
 syntax = "proto3";
-
 package matcher;
 
 service Matcher {
@@ -16,12 +13,11 @@ message MatchRequest {
 }
 
 message MatchResponse {
-    repeated Match matches = 1;
-    string error = 2;
+    repeated EndpointMatch matches = 1;
 }
 
-message Match {
-    string text = 1;
-    float score = 2;
-    // Add other fields as needed
+message EndpointMatch {
+    string endpoint_id = 1;
+    double similarity = 2;
+    map<string, string> parameters = 3;
 }

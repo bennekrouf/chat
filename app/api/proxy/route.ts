@@ -1,5 +1,3 @@
-// app/api/proxy/route.ts
-
 import { NextResponse } from 'next/server';
 
 // Disable edge runtime since we need Node.js features
@@ -30,7 +28,8 @@ export async function POST(request: Request): Promise<Response> {
 
     // Create client
     const client = new proto.matcher.Matcher(
-      'matcher.mayorana.ch:8081',
+      // 'matcher.mayorana.ch',
+      'localhost:50030',
       grpc.credentials.createInsecure()
     );
 
